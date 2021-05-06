@@ -1,5 +1,15 @@
 // You are given an array prices where prices[i] is the price of a given stock on the ith day.
 // Find the maximum profit you can achieve. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).
+
+// Input: prices = [7,1,5,3,6,4]
+// Output: 7
+
+// Input: prices = [7,1,5,3,6,4]
+// Output: 7
+
+// Input: prices = [7,6,4,3,1]
+// Output: 0
+
 // Leetcode - https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 
 // O(n) - Time Complexity

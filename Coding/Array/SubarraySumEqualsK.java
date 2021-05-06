@@ -2,6 +2,19 @@
 // Leetcode - https://leetcode.com/problems/subarray-sum-equals-k/
 // GeeksForGeeks - Must do questions topic wise
 
+// Input: nums = [1,1,1], k = 2
+// Output: 2
+
+// Input: nums = [1,2,3], k = 3
+// Output: 2
+
+// Input: nums = [9, 4, 20, 3, 10, 5], k = 33
+// Output: 2
+
+// Input: nums = [10, 2, -2, -20, 10], k = -10
+// Output: 3
+
+
 // O(n^2) - Time Complexity
 class Solution1 {
     public int subarraySum(int[] nums, int k) {

@@ -2,6 +2,18 @@
 // The digits are stored such that the most significant digit is at the head of the list, and each element in the array contains a single digit.
 // Leetcode - https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/559/
 
+// Input: digits = [1,2,3]
+// Output: [1,2,4]
+
+// Input: digits = [4,3,2,1]
+// Output: [4,3,2,2]
+
+// Input: digits = [0]
+// Output: [1]
+
+// Input: digits = [9,9,9,9]
+// Output: [1,0,0,0,0]
+
 // O(n) - Time Complexity
 class Solution {
     public int[] plusOne(int[] digits) {

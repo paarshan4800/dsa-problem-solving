@@ -2,6 +2,12 @@
 // Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
 // Leetcode - https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/727/
 
+// Input: nums = [1,1,2]
+// Output: 2, nums = [1,2]
+
+// Input: nums = [0,0,1,1,1,2,2,3,3,4]
+// Output: 5, nums = [0,1,2,3,4]
+
 // O(n) - Time Complexity
 // O(1) - Space Complexity
 

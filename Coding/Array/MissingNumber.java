@@ -2,6 +2,18 @@
 // Leetcode - https://leetcode.com/problems/missing-number/
 // GeeksForGeeks - Must do questions topic wise
 
+// Input: nums = [3,0,1]
+// Output: 2
+
+// Input: nums = [0,1]
+// Output: 2
+
+// Input: nums = [9,6,4,2,3,5,7,0,1]
+// Output: 8
+
+// Input: nums = [0]
+// Output: 1
+
 // O(n) - Time Complexity
 // O(n) - Space Complexity
 class Solution1 {
