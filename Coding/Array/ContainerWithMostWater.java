@@ -30,7 +30,12 @@ class Solution {
 
         for (int i = 0; i < height.length; i++) {
             for (int j = i + 1; j < height.length; j++) {
+
+                // Find the minimum height that can be stored between i and j
                 int min = Math.min(height[i], height[j]);
+
+                // Find how long this height spans. Span is calculated by j-i
+                // Update res if the current span is greater than res
                 res = Math.max(res, min * (j - i));
             }
         }

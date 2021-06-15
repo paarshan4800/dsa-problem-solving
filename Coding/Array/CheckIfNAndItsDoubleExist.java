@@ -24,6 +24,7 @@
 // Space Complexity - O(1)
 
 // Hashing Approach
+// If num*2 is in hash, return true. Else store num into hash
 // Time Complexity - O(n)
 // Space Complexity - O(n)
 
@@ -58,8 +59,8 @@ class Solution {
             if (num == 0) {
                 zeroCount++;
             } else {
-                // search for num and num*2
-                if (binarySearch(arr, num) && binarySearch(arr, num * 2)) {
+                // search for num*2
+                if (binarySearch(arr, num * 2)) {
                     return true;
                 }
             }
