@@ -1,0 +1,60 @@
+class Result {
+
+    /*
+     * Complete the 'maximumPoints' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts following parameters:
+     *  1. INTEGER_ARRAY arr
+     *  2. INTEGER k
+     */
+    
+    public static int[] calculateSumFront(List<Integer> arr) {
+        int[] res = new int[arr.size()+1];
+        int sum = 0;
+        
+        for(int i=0;i<arr.size();i++) {
+            sum+=arr.get(i);
+            res[i+1] = sum;
+        }
+        return res;
+    }
+    
+    public static int[] calculateSumBack(List<Integer> arr) {
+        int[] res = new int[arr.size()+1];
+        int sum = 0;
+        
+        for(int i=arr.size()-1;i>=0;i--) {
+            sum+=arr.get(i);
+            res[i] = sum;
+        }
+        return res;
+    }
+    
+    public static void reverse(int[] arr) {
+        int low = 0, high = arr.length-1;
+        while(low < high) {
+            int temp = arr[low];
+            arr[low] = arr[high];
+            arr[high] = temp;
+            low++;
+            high--;
+        }
+    }
+    
+    public static int maximumPoints(List<Integer> arr, int k) {
+        int[] sumFront = calculateSumFront(arr);
+        int[] sumBack = calculateSumBack(arr);
+        
+        reverse(sumBack);
+        
+        int res = 0;
+        for(int i=0;i<=k;i++) {
+            res = Math.max(res,sumFront[i]+sumBack[k-i]);
+        }
+        
+        return res;
+
+    }
+
+}

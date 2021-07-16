@@ -57,6 +57,8 @@ class Solution {
         Stack<StackNode> stack = new Stack<>();
         stack.push(new StackNode(root.left, root.right));
 
+        // PREORDER TRAVERSAL
+
         while (!stack.isEmpty()) {
             StackNode cur = stack.pop();
 

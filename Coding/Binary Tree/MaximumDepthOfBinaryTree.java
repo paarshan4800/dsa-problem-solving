@@ -59,6 +59,8 @@ class Solution {
         // Push the root and its depth 1 into stack
         stack.push(new StackNode(root, 1));
 
+        // PREORDER TRAVERSAL
+
         // Till stack is not empty
         while (!stack.isEmpty()) {
             // Pop the node to process
