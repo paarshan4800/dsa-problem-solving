@@ -36,9 +36,9 @@ class Solution {
         }
 
         for (int i = l; i <= r; i++) {
-            str = swap(str, i, l); // Swap i and j
+            str = swap(str, i, l); // Swap i and l
             permute(res, str, l + 1, r); // With l fixed, permute l+1 and r
-            str = swap(str, i, l); // Swap back i and j to original position
+            str = swap(str, i, l); // Swap back i and l to original position (BACKTRACK)
         }
     }
 

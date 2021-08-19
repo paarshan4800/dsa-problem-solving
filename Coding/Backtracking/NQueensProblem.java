@@ -37,13 +37,13 @@ class Solution {
                 return false;
         }
 
-        // Check the lower left to right diagonal
+        // Check the lower left diagonal
         for (i = row, j = col; i < n && j >= 0; i++, j--) {
             if (board[i][j] == 1)
                 return false;
         }
 
-        // Check the upper left to right diagonal
+        // Check the upper left diagonal
         for (i = row, j = col; i >= 0 && j >= 0; i--, j--) {
             if (board[i][j] == 1)
                 return false;
