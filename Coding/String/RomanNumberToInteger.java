@@ -19,6 +19,10 @@
 // s = III
 // Output: 3
 
+// Input:
+// s = CDXLIII
+// Output: 443
+
 class RomanToNumber {
     // Finds decimal value of a given roman numeral
     public int romanToDecimal(String str) {

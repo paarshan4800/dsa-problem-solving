@@ -15,8 +15,8 @@
 // Space Complexity - O(1)
 
 // Hashing Approach
-// Time Complexity - O(nlogn)
-// Space Complexity - O(1)
+// Time Complexity - O(n)
+// Space Complexity - O(n)
 class Solution {
     public boolean isAnagram(String s, String t) {
 

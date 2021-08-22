@@ -46,10 +46,16 @@ class GfG {
             curr.next = prev;
 
             // After the above two steps, left part would be reversed.
-            result = Math.max(result, 2 * count(prev, next) + 1); // If the length of the list is odd, +1 adds for the
-                                                                  // middle element
 
-            result = Math.max(result, 2 * count(curr, next)); // If the length of the list is even
+            // If the length of the list is odd, +1 adds for the middle element
+            // cur --> middle element , prev --> starting of left portion , next -->
+            // starting of right portion
+            result = Math.max(result, 2 * count(prev, next) + 1);
+
+            // If the length of the list is even
+            // cur --> starting of left portion , next -->
+            // starting of right portion
+            result = Math.max(result, 2 * count(curr, next));
 
             prev = curr;
             curr = next;
