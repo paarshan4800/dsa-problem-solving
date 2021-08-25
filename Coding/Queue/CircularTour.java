@@ -22,19 +22,28 @@ class Solution {
     // Function to find starting point where the truck can start to get through
     // the complete circle without exhausting its petrol in between.
     int tour(int petrol[], int distance[]) {
+
+        // Consider the first point done initially
         int start = 0, end = 1, n = petrol.length;
         int diff = petrol[0] - distance[0];
 
+        // Till we havent completed all points (start != end) or diff < 0 (the points
+        // covered now aren't valid)
         while (start != end || diff < 0) {
+            // Till we havent completed all points (start != end) and diff < 0 (the points
+            // covered now aren't valid)
             while (start != end && diff < 0) {
+                // Since invalid, Keep removing start's data from diff and move start forward
                 diff -= (petrol[start] - distance[start]);
                 start = (start + 1) % n;
 
+                // If start reached 0, there is no valid tour
                 if (start == 0) {
                     return -1;
                 }
             }
 
+            // Include end's data to diff and move end forward
             diff += (petrol[end] - distance[end]);
             end = (end + 1) % n;
         }
