@@ -31,6 +31,9 @@ class Solution {
         Queue<Integer> queue = new LinkedList<>();
 
         inorder(root, queue);
+
+        // Postorder traversal inserts the smaller elements at the leaf as first left
+        // and right subtrees are explored and then root node is explored
         postorder(root, queue);
     }
 }
